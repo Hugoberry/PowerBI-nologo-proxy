@@ -19,26 +19,10 @@ class RemoveElement {
 element(element) {
     // An incoming element, such as `div`
     element.append(`
-<script>
-// if you want to hide some element, add the selector to hideEle Array
-const hideEle = [ "#embedWrapperID > div.logoBarWrapper" ]
-
-function hideElement(qs) {
-  let eles = document.querySelectorAll(qs)
-  eles && eles.forEach(ele => ele.style.display = "none")
-}
-
-let MutationObserver = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver;
-let body = document.querySelector('body');
-let observer = new MutationObserver(function (mutations) {
-    mutations.forEach(function (mutation) {
-        hideEle.forEach( hideE => hideElement(hideE) )
-    });
-});
-observer.observe(body, { subtree: true, childList: true });   
-</script>
-<noscript>Please enable JavaScript to view this PowerBI dashboard</noscript>
-<style>.embeddedLandingRootContentLogoVisible { height: 100% }</style>
+<style>
+.embeddedLandingRootContentLogoVisible { height: 100% }
+.logoBarWrapper { display: none }
+</style>
 `, { html: Boolean })
     console.log(`Incoming element: ${element.tagName}`)
 }
