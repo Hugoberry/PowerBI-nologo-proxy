@@ -38,6 +38,7 @@ let observer = new MutationObserver(function (mutations) {
 observer.observe(body, { subtree: true, childList: true });   
 </script>
 <noscript>Please enable JavaScript to view this PowerBI dashboard</noscript>
+<style>.embeddedLandingRootContentLogoVisible { height: 100% }</style>
 `, { html: Boolean })
     console.log(`Incoming element: ${element.tagName}`)
 }
