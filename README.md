@@ -19,3 +19,8 @@ https://powernote.xyz/view?r=eyJrIjoiMmM0NWYwYWQtMTc0OS00ZWQ2LWE3Y2EtNTNkYjlmNWU
 2. Configure the DNS to use Cloudflare name servers
 3. Add the script from `src\index.js` to a Cloudflare Worker
 4. Add a route for the Worker pointing to your site ie. `powernote.xyz/*` 
+
+## Acknowledgements
+This solution was heavily inspired by @mayneyao [Notion.so > Personal Blog | custom domain + disqus comment](https://gist.github.com/mayneyao/b9fefc9625b76f70488e5d8c2a99315d)
+
+And some old fork of [Roket-Booster](https://github.com/booster-labs/rocket-booster)
